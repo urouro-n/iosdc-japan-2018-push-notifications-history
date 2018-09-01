@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3718F5B221282B2E00AFDBCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3718F5B121282B2E00AFDBCD /* AppDelegate.swift */; };
+		3718F5B421282B2E00AFDBCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3718F5B321282B2E00AFDBCD /* ViewController.swift */; };
+		3718F5B721282B2E00AFDBCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3718F5B521282B2E00AFDBCD /* Main.storyboard */; };
+		3718F5BC21282B3600AFDBCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3718F5BA21282B3600AFDBCD /* LaunchScreen.storyboard */; };
+		375D23FA213533BA00390D1E /* hello-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 375D23F9213533BA00390D1E /* hello-image.png */; };
+		376393912134533D009C6E5A /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376393902134533D009C6E5A /* UserNotifications.framework */; };
+		376393932134533D009C6E5A /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376393922134533D009C6E5A /* UserNotificationsUI.framework */; };
+		376393962134533D009C6E5A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376393952134533D009C6E5A /* NotificationViewController.swift */; };
+		376393992134533D009C6E5A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 376393972134533D009C6E5A /* MainInterface.storyboard */; };
+		3763939D2134533D009C6E5A /* PushNotificationHistoryContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3763938E2134533D009C6E5A /* PushNotificationHistoryContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		376393A221345A6E009C6E5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3718F5B821282B3600AFDBCD /* Assets.xcassets */; };
+		376393A321345BDB009C6E5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3718F5B821282B3600AFDBCD /* Assets.xcassets */; };
+		376393AB21346052009C6E5A /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376393AA21346052009C6E5A /* NotificationService.swift */; };
+		376393AF21346052009C6E5A /* PushNotificationHistoryServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 376393A821346052009C6E5A /* PushNotificationHistoryServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3763939B2134533D009C6E5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3718F5A621282B2E00AFDBCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3763938D2134533D009C6E5A;
+			remoteInfo = PushNotificationHistoryContentExtension;
+		};
+		376393AD21346052009C6E5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3718F5A621282B2E00AFDBCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 376393A721346052009C6E5A;
+			remoteInfo = PushNotificationHistoryServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		376393A12134533E009C6E5A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				376393AF21346052009C6E5A /* PushNotificationHistoryServiceExtension.appex in Embed App Extensions */,
+				3763939D2134533D009C6E5A /* PushNotificationHistoryContentExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3718F5AE21282B2E00AFDBCD /* PushNotificationsHistory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushNotificationsHistory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3718F5B121282B2E00AFDBCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3718F5B321282B2E00AFDBCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3718F5B621282B2E00AFDBCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3718F5B821282B3600AFDBCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3718F5BB21282B3600AFDBCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3718F5BD21282B3600AFDBCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3718F5C321282BCB00AFDBCD /* PushNotificationsHistory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushNotificationsHistory.entitlements; sourceTree = "<group>"; };
+		375D23F9213533BA00390D1E /* hello-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hello-image.png"; sourceTree = "<group>"; };
+		3763938E2134533D009C6E5A /* PushNotificationHistoryContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PushNotificationHistoryContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		376393902134533D009C6E5A /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		376393922134533D009C6E5A /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		376393952134533D009C6E5A /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		376393982134533D009C6E5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		3763939A2134533D009C6E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		376393A821346052009C6E5A /* PushNotificationHistoryServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PushNotificationHistoryServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		376393AA21346052009C6E5A /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		376393AC21346052009C6E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3718F5AB21282B2E00AFDBCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3763938B2134533D009C6E5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				376393932134533D009C6E5A /* UserNotificationsUI.framework in Frameworks */,
+				376393912134533D009C6E5A /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		376393A521346052009C6E5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3718F5A521282B2E00AFDBCD = {
+			isa = PBXGroup;
+			children = (
+				3718F5B021282B2E00AFDBCD /* PushNotificationsHistory */,
+				376393942134533D009C6E5A /* PushNotificationHistoryContentExtension */,
+				376393A921346052009C6E5A /* PushNotificationHistoryServiceExtension */,
+				3763938F2134533D009C6E5A /* Frameworks */,
+				3718F5AF21282B2E00AFDBCD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3718F5AF21282B2E00AFDBCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3718F5AE21282B2E00AFDBCD /* PushNotificationsHistory.app */,
+				3763938E2134533D009C6E5A /* PushNotificationHistoryContentExtension.appex */,
+				376393A821346052009C6E5A /* PushNotificationHistoryServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3718F5B021282B2E00AFDBCD /* PushNotificationsHistory */ = {
+			isa = PBXGroup;
+			children = (
+				3718F5BA21282B3600AFDBCD /* LaunchScreen.storyboard */,
+				3718F5B521282B2E00AFDBCD /* Main.storyboard */,
+				3718F5B121282B2E00AFDBCD /* AppDelegate.swift */,
+				3718F5B321282B2E00AFDBCD /* ViewController.swift */,
+				3763938721342C5B009C6E5A /* Resources */,
+				3718F5B821282B3600AFDBCD /* Assets.xcassets */,
+				3718F5BD21282B3600AFDBCD /* Info.plist */,
+				3718F5C321282BCB00AFDBCD /* PushNotificationsHistory.entitlements */,
+			);
+			path = PushNotificationsHistory;
+			sourceTree = "<group>";
+		};
+		3763938721342C5B009C6E5A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				375D23F9213533BA00390D1E /* hello-image.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3763938F2134533D009C6E5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				376393902134533D009C6E5A /* UserNotifications.framework */,
+				376393922134533D009C6E5A /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		376393942134533D009C6E5A /* PushNotificationHistoryContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				376393952134533D009C6E5A /* NotificationViewController.swift */,
+				376393972134533D009C6E5A /* MainInterface.storyboard */,
+				3763939A2134533D009C6E5A /* Info.plist */,
+			);
+			path = PushNotificationHistoryContentExtension;
+			sourceTree = "<group>";
+		};
+		376393A921346052009C6E5A /* PushNotificationHistoryServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				376393AA21346052009C6E5A /* NotificationService.swift */,
+				376393AC21346052009C6E5A /* Info.plist */,
+			);
+			path = PushNotificationHistoryServiceExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3718F5AD21282B2E00AFDBCD /* PushNotificationsHistory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3718F5C021282B3600AFDBCD /* Build configuration list for PBXNativeTarget "PushNotificationsHistory" */;
+			buildPhases = (
+				3718F5AA21282B2E00AFDBCD /* Sources */,
+				3718F5AB21282B2E00AFDBCD /* Frameworks */,
+				3718F5AC21282B2E00AFDBCD /* Resources */,
+				376393A12134533E009C6E5A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3763939C2134533D009C6E5A /* PBXTargetDependency */,
+				376393AE21346052009C6E5A /* PBXTargetDependency */,
+			);
+			name = PushNotificationsHistory;
+			productName = "iosdc-japan-2018-push-notifications-history";
+			productReference = 3718F5AE21282B2E00AFDBCD /* PushNotificationsHistory.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3763938D2134533D009C6E5A /* PushNotificationHistoryContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3763939E2134533E009C6E5A /* Build configuration list for PBXNativeTarget "PushNotificationHistoryContentExtension" */;
+			buildPhases = (
+				3763938A2134533D009C6E5A /* Sources */,
+				3763938B2134533D009C6E5A /* Frameworks */,
+				3763938C2134533D009C6E5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PushNotificationHistoryContentExtension;
+			productName = PushNotificationHistoryContentExtension;
+			productReference = 3763938E2134533D009C6E5A /* PushNotificationHistoryContentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		376393A721346052009C6E5A /* PushNotificationHistoryServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 376393B021346052009C6E5A /* Build configuration list for PBXNativeTarget "PushNotificationHistoryServiceExtension" */;
+			buildPhases = (
+				376393A421346052009C6E5A /* Sources */,
+				376393A521346052009C6E5A /* Frameworks */,
+				376393A621346052009C6E5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PushNotificationHistoryServiceExtension;
+			productName = PushNotificationHistoryServiceExtension;
+			productReference = 376393A821346052009C6E5A /* PushNotificationHistoryServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3718F5A621282B2E00AFDBCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = UROURO;
+				TargetAttributes = {
+					3718F5AD21282B2E00AFDBCD = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					3763938D2134533D009C6E5A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					376393A721346052009C6E5A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 3718F5A921282B2E00AFDBCD /* Build configuration list for PBXProject "PushNotificationsHistory" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3718F5A521282B2E00AFDBCD;
+			productRefGroup = 3718F5AF21282B2E00AFDBCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3718F5AD21282B2E00AFDBCD /* PushNotificationsHistory */,
+				3763938D2134533D009C6E5A /* PushNotificationHistoryContentExtension */,
+				376393A721346052009C6E5A /* PushNotificationHistoryServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3718F5AC21282B2E00AFDBCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3718F5BC21282B3600AFDBCD /* LaunchScreen.storyboard in Resources */,
+				376393A321345BDB009C6E5A /* Assets.xcassets in Resources */,
+				375D23FA213533BA00390D1E /* hello-image.png in Resources */,
+				3718F5B721282B2E00AFDBCD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3763938C2134533D009C6E5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				376393A221345A6E009C6E5A /* Assets.xcassets in Resources */,
+				376393992134533D009C6E5A /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		376393A621346052009C6E5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3718F5AA21282B2E00AFDBCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3718F5B421282B2E00AFDBCD /* ViewController.swift in Sources */,
+				3718F5B221282B2E00AFDBCD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3763938A2134533D009C6E5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				376393962134533D009C6E5A /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		376393A421346052009C6E5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				376393AB21346052009C6E5A /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3763939C2134533D009C6E5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3763938D2134533D009C6E5A /* PushNotificationHistoryContentExtension */;
+			targetProxy = 3763939B2134533D009C6E5A /* PBXContainerItemProxy */;
+		};
+		376393AE21346052009C6E5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 376393A721346052009C6E5A /* PushNotificationHistoryServiceExtension */;
+			targetProxy = 376393AD21346052009C6E5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3718F5B521282B2E00AFDBCD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3718F5B621282B2E00AFDBCD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3718F5BA21282B3600AFDBCD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3718F5BB21282B3600AFDBCD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		376393972134533D009C6E5A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				376393982134533D009C6E5A /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3718F5BE21282B3600AFDBCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3718F5BF21282B3600AFDBCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3718F5C121282B3600AFDBCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushNotificationsHistory/PushNotificationsHistory.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U34SUZJMKE;
+				INFOPLIST_FILE = PushNotificationsHistory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.urouro.PushNotificationsHistory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3718F5C221282B3600AFDBCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushNotificationsHistory/PushNotificationsHistory.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U34SUZJMKE;
+				INFOPLIST_FILE = PushNotificationsHistory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.urouro.PushNotificationsHistory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3763939F2134533E009C6E5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U34SUZJMKE;
+				INFOPLIST_FILE = PushNotificationHistoryContentExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.urouro.PushNotificationsHistory.PushNotificationHistoryContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		376393A02134533E009C6E5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U34SUZJMKE;
+				INFOPLIST_FILE = PushNotificationHistoryContentExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.urouro.PushNotificationsHistory.PushNotificationHistoryContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		376393B121346052009C6E5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U34SUZJMKE;
+				INFOPLIST_FILE = PushNotificationHistoryServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.urouro.PushNotificationsHistory.PushNotificationHistoryServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		376393B221346052009C6E5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U34SUZJMKE;
+				INFOPLIST_FILE = PushNotificationHistoryServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.urouro.PushNotificationsHistory.PushNotificationHistoryServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3718F5A921282B2E00AFDBCD /* Build configuration list for PBXProject "PushNotificationsHistory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3718F5BE21282B3600AFDBCD /* Debug */,
+				3718F5BF21282B3600AFDBCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3718F5C021282B3600AFDBCD /* Build configuration list for PBXNativeTarget "PushNotificationsHistory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3718F5C121282B3600AFDBCD /* Debug */,
+				3718F5C221282B3600AFDBCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3763939E2134533E009C6E5A /* Build configuration list for PBXNativeTarget "PushNotificationHistoryContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3763939F2134533E009C6E5A /* Debug */,
+				376393A02134533E009C6E5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		376393B021346052009C6E5A /* Build configuration list for PBXNativeTarget "PushNotificationHistoryServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				376393B121346052009C6E5A /* Debug */,
+				376393B221346052009C6E5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3718F5A621282B2E00AFDBCD /* Project object */;
+}

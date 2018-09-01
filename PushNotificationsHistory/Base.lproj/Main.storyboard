@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PushNotificationsHistory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1l-es-6Jf">
+                                <rect key="frame" x="16" y="36" width="288" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1s5-Mu-Tnd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="プッシュ通知を許可する"/>
+                                <connections>
+                                    <action selector="didTapRegisterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wdx-Xp-y7B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3z-Z8-GV7">
+                                <rect key="frame" x="16" y="96" width="288" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="cd5-Q6-NG0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="カスタムアクションのローカル通知"/>
+                                <connections>
+                                    <action selector="didTapCustomActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ox3-me-9CA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJN-Re-Nvg">
+                                <rect key="frame" x="16" y="156" width="288" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hK4-ve-LPM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="getPendingNotificationRequests (iOS 10)"/>
+                                <connections>
+                                    <action selector="didTapGetPendingNotificationsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="imS-G8-gcE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkg-cS-LhD">
+                                <rect key="frame" x="16" y="216" width="288" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="aMs-oc-3fW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="getDeliveredNotifications (iOS 10)"/>
+                                <connections>
+                                    <action selector="didTapGetDeliveredNotificationsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hnx-YB-ySE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bf-Fl-93F">
+                                <rect key="frame" x="16" y="276" width="288" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="J1A-zB-aFS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                <state key="normal" title="removeAllPendingNotificationRequests (iOS 10)"/>
+                                <connections>
+                                    <action selector="didTapRemoveAllPendingNotificationsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Ck-eC-G99"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmF-Zd-xFe">
+                                <rect key="frame" x="16" y="336" width="288" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ezh-qZ-tVD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="removeAllDeliveredNotifications (iOS 10)"/>
+                                <connections>
+                                    <action selector="didTapRemoveAllDeliveredNotificationsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VRT-Y1-zuc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A55-Vv-d1X">
+                                <rect key="frame" x="16" y="396" width="288" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="VQO-Sp-rwb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="画像つきのローカル通知 (iOS 10)"/>
+                                <connections>
+                                    <action selector="didTapMediaLocalNotificationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vd4-Cy-z0w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQf-IA-uR6">
+                                <rect key="frame" x="16" y="456" width="288" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ckY-T3-XjI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="通知設定の取得 (iOS 10)"/>
+                                <connections>
+                                    <action selector="didTapGetNotificationSettingsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ndD-pE-vVL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b3z-Z8-GV7" secondAttribute="trailing" constant="16" id="1el-sA-QQY"/>
+                            <constraint firstItem="UJN-Re-Nvg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2Hu-4d-Yhu"/>
+                            <constraint firstItem="4bf-Fl-93F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2Rh-3d-Hgt"/>
+                            <constraint firstItem="UJN-Re-Nvg" firstAttribute="top" secondItem="b3z-Z8-GV7" secondAttribute="bottom" constant="16" id="5fq-Zf-vzC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tmF-Zd-xFe" secondAttribute="trailing" constant="16" id="8vm-ad-bPu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZQf-IA-uR6" secondAttribute="trailing" constant="16" id="CNY-W5-y0u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hkg-cS-LhD" secondAttribute="trailing" constant="16" id="Ec8-US-IPb"/>
+                            <constraint firstItem="ZQf-IA-uR6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="EmN-bZ-SMs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UJN-Re-Nvg" secondAttribute="trailing" constant="16" id="SDa-PD-FwM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A55-Vv-d1X" secondAttribute="trailing" constant="16" id="U5i-X9-Ond"/>
+                            <constraint firstItem="tmF-Zd-xFe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="W6E-ee-svv"/>
+                            <constraint firstItem="b3z-Z8-GV7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Y39-cf-x4g"/>
+                            <constraint firstItem="p1l-es-6Jf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZEe-yA-RHY"/>
+                            <constraint firstItem="p1l-es-6Jf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="cE1-J7-Oac"/>
+                            <constraint firstItem="ZQf-IA-uR6" firstAttribute="top" secondItem="A55-Vv-d1X" secondAttribute="bottom" constant="16" id="dZX-0q-VgK"/>
+                            <constraint firstItem="A55-Vv-d1X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fJb-wM-TNR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4bf-Fl-93F" secondAttribute="trailing" constant="16" id="fU8-v2-QTq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p1l-es-6Jf" secondAttribute="trailing" constant="16" id="mdl-R9-WVe"/>
+                            <constraint firstItem="hkg-cS-LhD" firstAttribute="top" secondItem="UJN-Re-Nvg" secondAttribute="bottom" constant="16" id="nuE-Mj-DQD"/>
+                            <constraint firstItem="4bf-Fl-93F" firstAttribute="top" secondItem="hkg-cS-LhD" secondAttribute="bottom" constant="16" id="pSL-fW-Ytm"/>
+                            <constraint firstItem="hkg-cS-LhD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="pZ7-pR-faw"/>
+                            <constraint firstItem="b3z-Z8-GV7" firstAttribute="top" secondItem="p1l-es-6Jf" secondAttribute="bottom" constant="16" id="tGu-O4-DDC"/>
+                            <constraint firstItem="A55-Vv-d1X" firstAttribute="top" secondItem="tmF-Zd-xFe" secondAttribute="bottom" constant="16" id="uXI-Za-zgb"/>
+                            <constraint firstItem="tmF-Zd-xFe" firstAttribute="top" secondItem="4bf-Fl-93F" secondAttribute="bottom" constant="16" id="vRc-QB-s01"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
