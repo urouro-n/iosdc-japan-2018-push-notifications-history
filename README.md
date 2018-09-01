@@ -1,5 +1,7 @@
 # iOSDC Japan 2018「プッシュ通知はどのような 進化をたどってきたか」サンプルコード
 
+https://fortee.jp/iosdc-japan-2018/proposal/48329936-3058-4d73-a18c-9e163a5a229e
+
 ## Push 通知の送信テストスクリプトについて
 
 `./sendpush` ディレクトリに簡単なスクリプトを置いています。
@@ -43,8 +45,8 @@ $ APN_AUTH_KEY_FILE=AuthKey_XXXXXXXXXX.p8 APN_KEY_ID=XXXXXXXXXX APN_TEAM_ID=XXXX
 
 ### ペイロードのサンプル
 
-以下のケースのサンプルをmain.goに書いています。
-雑にコメントアウトで切り替える形にしています m(_ _)m
+以下のケースのサンプルをmain.goに書いています。  
+雑にコメントアウトで切り替える形にしています :bow:  
 categoryなどはアプリのコードと対応しています。
 
 - 本文のみ
